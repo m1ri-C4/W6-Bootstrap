@@ -16,7 +16,7 @@
 
     <header class="bg-primary">
         <div class="container d-flex justify-content-between align-items-center">
-            <nav class="navbar navbar-expand-lg bg-primary container-fluid" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-md bg-primary container-fluid" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand text-light fw-bold" href="#">EdiShop</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,7 +26,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" href="#">Prodotti</a>
+                            <a class="nav-link" href="#prodotti">Prodotti</a>
                             <a class="nav-link" href="#">Offerte</a>
                             <a class="nav-link" href="#">Contatti</a>
                         </div>
@@ -92,21 +92,92 @@
                             <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold">Sneaker Run</h5>
-                                <p class="card-text text-muted">Scarpa leggera per la corsa, suola in gomma traspirante.</p>
-                                <h5 class="fw-bold m-0">€ 89,00</h5>
-                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                                <p class="card-text text-muted">Scarpa leggera per la corsa, suola in gomma traspirante.
+                                </p>
+                                <h5 class="fw-bold mb-3">€ 89,00</h5>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Dettagli
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">Sneaker
+                                                    Run</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="https://placehold.jp/600x300.png" class="img-fluid mb-3"
+                                                    alt="...">
+                                                <p class="card-text text-dark">Scarpa leggera per la corsa, suola in
+                                                    gomma traspirante. Disponibile dal 36 al 46.
+                                                </p>
+                                                <h5 class="fw-bold m-0">€ 89,00</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-success">Aggiungi al carrello
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </article>
 
                     <article class="col-12 col-sm-6 col-xl-4">
-                      <div class="card w-100">
+                        <div class="card w-100">
                             <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold">T-shirt basic</h5>
-                                <p class="card-text text-muted">Cotone biologico, taglio regolare, disponibile in 5 colori.</p>
-                                <h5 class="fw-bold m-0">€ 19,00</h5>
-                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                                <p class="card-text text-muted">Cotone biologico, taglio regolare, disponibile in 5
+                                    colori.</p>
+                                <h5 class="fw-bold mb-3">€ 19,00</h5>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Dettagli
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">T-shirt
+                                                    basic</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="https://placehold.jp/600x300.png" class="img-fluid mb-3"
+                                                    alt="...">
+                                                <p class="card-text text-dark">.
+                                                </p>
+                                                <h5 class="fw-bold m-0">€ 19,00</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-success">Aggiungi al carrello
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </article>
@@ -116,9 +187,45 @@
                             <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-semibold">Borsa city</h5>
-                                <p class="card-text text-muted">Tessuto resistente, tasca interna, cinghia regolabile.</p>
-                                <h5 class="fw-bold m-0">€ 49,00</h5>
-                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                                <p class="card-text text-muted">Tessuto resistente, tasca interna, cinghia regolabile.
+                                </p>
+                                <h5 class="fw-bold mb-3">€ 49,00</h5>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Dettagli
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">Borsa
+                                                    city</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="https://placehold.jp/600x300.png" class="img-fluid mb-3"
+                                                    alt="...">
+                                                <p class="card-text text-dark">Scarpa leggera per la corsa, suola in
+                                                    gomma traspirante. Disponibile dal 36 al 46.
+                                                </p>
+                                                <h5 class="fw-bold m-0">€ 49,00</h5>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-success">Aggiungi al carrello
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </article>
