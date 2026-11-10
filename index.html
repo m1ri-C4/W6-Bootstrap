@@ -16,17 +16,17 @@
 
     <header class="bg-primary">
         <div class="container d-flex justify-content-between align-items-center">
-            <nav class="navbar navbar-expand-lg bg-primary container-fluid">
+            <nav class="navbar navbar-expand-lg bg-primary container-fluid" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand text-light fw-bold" href="#">EdiShop</a>
-                    <button class="navbar-toggler border-white" data-bs-theme="dark" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="#">Prodotti</a>
+                            <a class="nav-link" href="#">Prodotti</a>
                             <a class="nav-link" href="#">Offerte</a>
                             <a class="nav-link" href="#">Contatti</a>
                         </div>
@@ -42,15 +42,15 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active bg-primary py-5" data-bs-interval="10000">
-                        <h2 class="fs-1 fw-bold  text-light">Saldi di primavera</h2>
+                        <h2 class="fw-bold  text-light">Saldi di primavera</h2>
                         <p class=" text-light mb-4"> Fino al 50% di sconto sui prodotti in evidenza</p>
                     </div>
                     <div class="carousel-item bg-success py-5" data-bs-interval="2000">
-                        <h2 class="fs-1 fw-bold  text-light">Nuova collezione</h2>
+                        <h2 class="fw-bold  text-light">Nuova collezione</h2>
                         <p class=" text-light mb-4"> Scopri gli arrivi della settimana</p>
                     </div>
                     <div class="carousel-item bg-dark py-5">
-                        <h2 class="fs-1 fw-bold  text-light">Spedizione gratis</h2>
+                        <h2 class="fw-bold  text-light">Spedizione gratis</h2>
                         <p class=" text-light mb-4"> Sopra i 50€ su tutto il sito</p>
                     </div>
                 </div>
@@ -82,36 +82,51 @@
             </aside>
 
             <section class="col-12 col-lg-9">
-                <h2 id="prodotti" class="fs-3 fw-bold mb-4 text-center text-md-start">Prodotti in evidenza</h2>
+                <h2 id="prodotti" class="fs-3 fw-bold mb-4 text-center text-md-start"> Prodotti in evidenza <span
+                        class="badge text-bg-danger">-30%</span></h2>
 
-                <div class="row">
+                <div class="row g-3 px-3">
 
-                    <article class="col-12 col-sm-6 col-xl-4 mb-3">
-                        <div class="border rounded p-3 bg-white shadow-sm">
-                            <div class="bg-secondary mb-2 rounded" style="height: 160px;"></div>
-                            <h3 class="fs-5 fw-bold m-0">Sneaker Run</h3>
-                            <p class="text-muted m-0"> € 89,00</p>
+                    <article class="col-12 col-sm-6 col-xl-4">
+                        <div class="card w-100">
+                            <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Sneaker Run</h5>
+                                <p class="card-text text-muted">Scarpa leggera per la corsa, suola in gomma traspirante.</p>
+                                <h5 class="fw-bold m-0">€ 89,00</h5>
+                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="col-12 col-sm-6 col-xl-4 mb-3">
-                        <div class="border rounded p-3 bg-white shadow-sm">
-                            <div class="bg-secondary mb-2 rounded" style="height: 160px;"></div>
-                            <h3 class="fs-5 fw-bold m-0">T-shirt basic</h3>
-                            <p class="text-muted m-0"> € 19,00</p>
+                    <article class="col-12 col-sm-6 col-xl-4">
+                      <div class="card w-100">
+                            <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">T-shirt basic</h5>
+                                <p class="card-text text-muted">Cotone biologico, taglio regolare, disponibile in 5 colori.</p>
+                                <h5 class="fw-bold m-0">€ 19,00</h5>
+                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="col-12 col-sm-6 col-xl-4 mb-3">
-                        <div class="border rounded p-3 bg-white shadow-sm">
-                            <div class="bg-secondary mb-2 rounded" style="height: 160px;"></div>
-                            <h3 class="fs-5 fw-bold m-0">Borsa city</h3>
-                            <p class="text-muted m-0"> € 49,00</p>
+                    <article class="col-12 col-sm-6 col-xl-4">
+                        <div class="card w-100">
+                            <img src="https://placehold.jp/300x180.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-semibold">Borsa city</h5>
+                                <p class="card-text text-muted">Tessuto resistente, tasca interna, cinghia regolabile.</p>
+                                <h5 class="fw-bold m-0">€ 49,00</h5>
+                                <a href="#" class="btn btn-primary w-100">Dettagli</a>
+                            </div>
                         </div>
                     </article>
                 </div>
+
             </section>
         </div>
+
     </main>
 
     <footer class="bg-dark text-white py-3">
