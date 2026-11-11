@@ -104,5 +104,32 @@ products.forEach((product) => {
     card.append(cardImg, cardBody);
     article.append(card);
     productsRow.append(article);
-    
+
 });
+
+const darkMode = document.querySelector('#dark-mode');
+
+// funzione bottone dark mode
+darkMode.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (document.body.getAttribute('data-bs-theme') === 'light') {
+        document.body.setAttribute('data-bs-theme', 'dark');
+        darkMode.textContent = 'Tema chiaro';
+    } else {
+        document.body.setAttribute('data-bs-theme', 'light');
+        darkMode.textContent = 'Tema scuro';
+    }
+});
+
+/*
+darkMode.addEventListener('click', (e) => {
+    document.body.classList.add('darkTheme');
+    darkMode.style.display = 'none';
+    lightMode.style.display = 'inline-block';
+});
+
+lightMode.addEventListener('click', (e) => {
+    document.body.classList.remove('darkTheme');
+    lightMode.style.display = 'none';
+    darkMode.style.display = 'inline-block';
+});*/
